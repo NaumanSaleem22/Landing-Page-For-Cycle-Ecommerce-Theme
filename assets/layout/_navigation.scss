@@ -1,0 +1,28 @@
+.navbar-main {
+    width: 100%;
+    color: white;
+    @include flexRow;
+    justify-content: space-between;
+}
+
+.top-bar {
+    @include flexRow;
+    justify-content: space-between;
+    padding: 10px 0;
+    color: $color-gray;
+    font-size: $default-font-size;
+    &__inner {
+        @include flexRow;
+        &--icon-text {
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            background-color: aqua;
+        }
+    }
+}
+
+.nav-icons {
+    color: $color-primary;
+    font-size: 45px;
+}
