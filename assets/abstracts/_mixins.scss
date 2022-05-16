@@ -5,6 +5,10 @@
     }
 }
 
+@mixin transition02 {
+    transition: 0.2s all ease;
+}
+
 // Media Query Manager
 // 0 - 600px : Phone
 // 600 - 900px  : Tablet Portrait

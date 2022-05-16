@@ -8,16 +8,58 @@
 .top-bar {
     @include flexRow;
     justify-content: space-between;
+    align-items: center;
     padding: 10px 0;
     color: $color-gray;
     font-size: $default-font-size;
     &__inner {
         @include flexRow;
+        justify-content: flex-start;
+        flex: 1;
         &--icon-text {
-            margin-right: 10px;
             display: flex;
             align-items: center;
-            background-color: aqua;
+            cursor: pointer;
+            font-weight: 500;
+            @include transition02;
+            &-link,
+            &-link:visited {
+                color: $color-gray;
+                text-decoration: none;
+            }
+            &-link:hover {
+                color: $color-primary;
+                @include transition02;
+            }
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+            &--nav-icons {
+                color: $color-primary;
+                &:not(:last-child) {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    &__logo {
+        flex: 0 0 50%;
+        text-align: center
+    }
+    &__right {
+        @include flexRow;
+        flex: 1;
+        justify-content: flex-end;
+        &__div--icon {
+            cursor: pointer;
+            @include transition02;
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+            &:hover {
+                color: $color-primary;
+                @include transition02;
+            }
         }
     }
 }

@@ -62,6 +62,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 10px 0;
   color: #9ca4ab;
   font-size: 1.6rem;
@@ -78,6 +81,15 @@ body {
 }
 
 .top-bar__inner {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.top-bar__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -88,14 +100,81 @@ body {
 }
 
 .top-bar__inner--icon-text {
-  margin-right: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: aqua;
+  cursor: pointer;
+  font-weight: 500;
+  -webkit-transition: 0.2s all ease;
+  transition: 0.2s all ease;
+}
+
+.top-bar__inner--icon-text-link, .top-bar__inner--icon-text-link:visited {
+  color: #9ca4ab;
+  text-decoration: none;
+}
+
+.top-bar__inner--icon-text-link:hover {
+  color: #23c050;
+  -webkit-transition: 0.2s all ease;
+  transition: 0.2s all ease;
+}
+
+.top-bar__inner--icon-text:not(:last-child) {
+  margin-right: 20px;
+}
+
+.top-bar__inner--icon-text--nav-icons {
+  color: #23c050;
+}
+
+.top-bar__inner--icon-text--nav-icons:not(:last-child) {
+  margin-right: 10px;
+}
+
+.top-bar__logo {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  text-align: center;
+}
+
+.top-bar__right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.top-bar__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.top-bar__right__div--icon {
+  cursor: pointer;
+  -webkit-transition: 0.2s all ease;
+  transition: 0.2s all ease;
+}
+
+.top-bar__right__div--icon:not(:last-child) {
+  margin-right: 10px;
+}
+
+.top-bar__right__div--icon:hover {
+  color: #23c050;
+  -webkit-transition: 0.2s all ease;
+  transition: 0.2s all ease;
 }
 
 .nav-icons {
