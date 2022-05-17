@@ -1,4 +1,5 @@
 .header-background {
     background-image: url(../../img/bg-slider-2.jpg);
     height: 100vh;
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
 }
