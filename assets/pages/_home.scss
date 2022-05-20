@@ -1,0 +1,48 @@
+// 2nd section
+.options__bike {
+    @include flexRow;
+    color: white;
+    gap: 20px;
+    &__firstdiv {
+        flex: 0 0 70%;
+        &--findBikediv {
+            background-image: url('../../img/bg-slider-2.jpg');
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            @include flexRow;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &--freeShipping {
+            @include flexRow;
+            gap: 20px;
+            &--spareParts {
+                flex: 0 0 50%;
+                background-image: url('../../img/bg-slider-2.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            &--accessories {
+                flex: 0 0 50%;
+                background-image: url('../../img/bg-slider-2.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+    &-accessoriesdiv {
+        background-image: url('../../img/bg-slider-2.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        flex: 1;
+        &--img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
