@@ -14,23 +14,43 @@
             @include flexRow;
             justify-content: space-between;
             align-items: center;
+            padding: 20px;
+            position: relative;
+            height: 300px;
+            margin-bottom: 50px;
+            .bicycle-img-abs {
+                position: absolute;
+                right: 40px;
+            }
         }
         &--freeShipping {
+            margin-top: 20px;
             @include flexRow;
-            gap: 20px;
+            justify-content: space-between;
             &--spareParts {
-                flex: 0 0 50%;
+                flex: 0 0 45%;
                 background-image: url('../../img/bg-slider-2.jpg');
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
+                padding: 20px 0px 20px 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                p {
+                    color: $color-primary;
+                }
             }
             &--accessories {
-                flex: 0 0 50%;
+                flex: 0 0 48%;
                 background-image: url('../../img/bg-slider-2.jpg');
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
+                padding: 20px 0px 20px 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
             }
         }
     }
@@ -40,8 +60,16 @@
         background-position: center;
         background-repeat: no-repeat;
         flex: 1;
+        position: relative;
+        overflow: hidden;
+        &--innerdiv {
+            padding: 20px 0px 20px 20px;
+        }
         &--img {
-            width: 100%;
+            max-width: 416px;
+            position: absolute;
+            top: 0;
+            right: 0;
             height: 100%;
         }
     }
