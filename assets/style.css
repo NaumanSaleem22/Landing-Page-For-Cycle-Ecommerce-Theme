@@ -22,6 +22,11 @@ section {
   padding: 60px 0px;
 }
 
+.container-width {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 body {
   font-family: "Lato", sans-serif;
   /* font-size: 16px; */
@@ -55,6 +60,13 @@ body {
   color: #fff;
 }
 
+.green-section-heading {
+  font-size: 34px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #23c050;
+}
+
 .orange-price-color {
   color: #f57212;
   font-size: 24px;
@@ -68,13 +80,14 @@ body {
 
 .header-background {
   background-image: url(../../img/bg-slider-2.jpg);
-  height: 100vh;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+  height: 100%;
+  -webkit-clip-path: polygon(50% 98%, 100% 92%, 100% 0, 0 0, 0 92%);
+          clip-path: polygon(50% 98%, 100% 92%, 100% 0, 0 0, 0 92%);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 0px;
+  padding: 0px 0px 100px 0px;
+  width: 100%;
 }
 
 .banner__main__div {
@@ -87,6 +100,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 100px 0px 0px 0px;
 }
 
 .banner__main__div--content-div {
@@ -235,7 +249,7 @@ body {
   position: absolute;
   top: 60px;
   height: 1px;
-  width: 1125px;
+  max-width: 1125px;
   background-color: #9ca4ab;
 }
 
@@ -367,8 +381,8 @@ body {
 
 .options__bike__firstdiv {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 70%;
-          flex: 0 0 70%;
+      -ms-flex: 0 0 65%;
+          flex: 0 0 65%;
 }
 
 .options__bike__firstdiv--findBikediv {
@@ -423,8 +437,8 @@ body {
 
 .options__bike__firstdiv--freeShipping--spareParts {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 45%;
-          flex: 0 0 45%;
+      -ms-flex: 0 0 48%;
+          flex: 0 0 48%;
   background-image: url("../../img/bg-slider-2.jpg");
   background-size: cover;
   background-position: center;
@@ -487,5 +501,94 @@ body {
   top: 0;
   right: 0;
   height: 100%;
+}
+
+.advantages__outer__div {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+}
+
+.advantages__outer__div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.advantages__outer__div--card {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  background-image: url("../../img/bg-slider-2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 80px;
+  position: relative;
+}
+
+.advantages__outer__div--card::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0.2;
+  border: 2px solid #fff;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  z-index: 3;
+  -webkit-transition: 0.35s ease;
+  transition: 0.35s ease;
+  pointer-events: none;
+}
+
+.section__subscribe {
+  padding: 20px 0px;
+  background-image: url("../../img/bg-dark-subscribe.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-clip-path: polygon(75% 98%, 100% 92%, 100% 0, 0 0, 0 92%);
+          clip-path: polygon(75% 98%, 100% 92%, 100% 0, 0 0, 0 92%);
+  position: relative;
+}
+
+.section__subscribe::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.342);
+  z-index: 1;
+}
+
+.section__subscribe--outer-div {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 2;
+}
+
+.section__subscribe--outer-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 /*# sourceMappingURL=style.css.map */

@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <section class="header-background">
+    <div class="header-background">
         <div class="container">
             <div class="top-bar">
                 <div class="top-bar__inner">
@@ -144,7 +144,7 @@
             </div>
 
         </div>
-    </section>
+    </div>
 
 
     <section>
@@ -194,10 +194,44 @@
 
     <section>
         <h2 class="white-section-heading text-center">Our Advantages</h2>
-        <div>
-            <div></div>
-            <div></div>
-            <div></div>
+        <div class="container">
+            <div class="advantages__outer__div">
+                <div class="advantages__outer__div--card">
+                    <i> <img src="./img/advantages-dark-1.svg"> </i>
+                    <h2 class="mt-4 green-section-heading">Free Shipping</h2>
+                    <h2 class="white-section-heading">From $500</h2>
+                </div>
+                <div class="advantages__outer__div--card">
+                    <i> <img src="./img/advantages-dark-2.svg"> </i>
+                    <h2 class="mt-4 green-section-heading">Free Shipping</h2>
+                    <h2 class="white-section-heading">From $500</h2>
+                </div>
+                <div class="advantages__outer__div--card">
+                    <i> <img src="./img/advantages-dark-3.svg"> </i>
+                    <h2 class="mt-4 green-section-heading">Free Shipping</h2>
+                    <h2 class="white-section-heading">From $500</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section__subscribe">
+        <div class="container">
+            <div class="section__subscribe--outer-div">
+                <div>
+                    <h2 class="white-section-heading">SUBSCRIBE</h2>
+                    <p>
+                        Subscribe us and you won't miss the new arrivals, as well as discounts and sales.
+                    </p>
+                    <div class="">
+                        <input type="email" /> <button>Send</button>
+                    </div>
+                </div>
+                <div>
+                    <img src="./img/subscribe-img.png" />
+                </div>
+            </div>
         </div>
     </section>
     <!-- Option 1: Bootstrap Bundle with Popper -->
@@ -219,6 +253,14 @@
                 fade: true,
                 cssEase: 'linear',
                 infinite: true,
+                responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 1,
+                        mobileFirst: true, //add this one
+                    }
+
+                }]
             });
         });
     </script>

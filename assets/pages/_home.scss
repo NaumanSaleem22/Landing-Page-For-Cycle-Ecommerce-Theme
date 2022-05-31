@@ -4,7 +4,7 @@
     color: white;
     gap: 20px;
     &__firstdiv {
-        flex: 0 0 70%;
+        flex: 0 0 65%;
         &--findBikediv {
             background-image: url('../../img/bg-slider-2.jpg');
             width: 100%;
@@ -28,7 +28,7 @@
             @include flexRow;
             justify-content: space-between;
             &--spareParts {
-                flex: 0 0 45%;
+                flex: 0 0 48%;
                 background-image: url('../../img/bg-slider-2.jpg');
                 background-size: cover;
                 background-position: center;
@@ -72,5 +72,63 @@
             right: 0;
             height: 100%;
         }
+    }
+}
+
+.advantages__outer__div {
+    @include flexRow;
+    justify-content: space-between;
+    gap: 20px;
+    &--card {
+        flex: 1;
+        text-align: center;
+        background-image: url('../../img/bg-slider-2.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 80px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            opacity: 0.2;
+            border: 2px solid #fff;
+            width: calc(100% - 20px);
+            height: calc(100% - 20px);
+            z-index: 3;
+            -webkit-transition: 0.35s ease;
+            transition: 0.35s ease;
+            pointer-events: none;
+        }
+    }
+}
+
+.section__subscribe {
+    padding: 20px 0px;
+    background-image: url('../../img/bg-dark-subscribe.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    clip-path: polygon(75% 98%, 100% 92%, 100% 0, 0 0, 0 92%);
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.342);
+        z-index: 1;
+    }
+    &--outer-div {
+        @include flexRow;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 2;
     }
 }
